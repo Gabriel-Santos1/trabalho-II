@@ -49,7 +49,7 @@
                         </td>
 
                         <td>
-                            <form action="/cliente/edit/<?= $cliente['id'] ?>" method="get">
+                            <form action="/cliente/edit/<?= $cliente['id'] ?>" method="post">
                                 <?= csrf_field() ?>
                                 <button class="btn btn-primary">Editar</button>
                             </form>

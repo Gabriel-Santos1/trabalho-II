@@ -61,9 +61,15 @@ class Cliente extends BaseController
 
     public function edit($id)
     {
+        $clienteService = service('cliente');
+
+        $r = $clienteService->getClienteById($id);
+
+        if ($r['status'] === 'error') {
+            return $r['message'];
+        }
+
         // Lógica para exibir o formulário de edição do cliente com o ID fornecido
-        return view('index', [
-            'user' => $this->ClienteModel->find($id)
-        ]);
+        return view('ClienteEdit', $r);
     }
 }

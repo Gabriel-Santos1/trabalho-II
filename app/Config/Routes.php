@@ -13,4 +13,5 @@ $routes->post('/cadastro', 'Cadastro::cadastro');
 // Rota para exibir a lista de clientes
 $routes->get('/clientes', 'Cliente::index');
 $routes->post('cliente/delete/(:num)', 'Cliente::delete/$1');
+$routes->post('cliente/edit/(:num)', 'Cliente::edit/$1');
 

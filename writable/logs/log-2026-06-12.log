@@ -1362,3 +1362,275 @@ WARNING - 2026-06-12 06:24:50 --> [DEPRECATED] Creation of dynamic property App\
  5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2026-06-12 06:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:12:13 --> CSRF token verified.
+DEBUG - 2026-06-12 12:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:23:45 --> CSRF token verified.
+DEBUG - 2026-06-12 12:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:48:21 --> CSRF token verified.
+ERROR - 2026-06-12 12:48:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\usuarios\0077530\Documents\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\usuarios\0077530\Documents\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 E:\usuarios\0077530\Documents\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 E:\usuarios\0077530\Documents\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2026-06-12 12:48:28 --> CSRF token verified.
+ERROR - 2026-06-12 12:48:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\usuarios\0077530\Documents\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\usuarios\0077530\Documents\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 E:\usuarios\0077530\Documents\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 E:\usuarios\0077530\Documents\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+DEBUG - 2026-06-12 12:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:48:41 --> CSRF token verified.
+ERROR - 2026-06-12 12:48:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\usuarios\0077530\Documents\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\usuarios\0077530\Documents\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 E:\usuarios\0077530\Documents\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 E:\usuarios\0077530\Documents\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2026-06-12 12:48:46 --> CSRF token verified.
+ERROR - 2026-06-12 12:48:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\usuarios\0077530\Documents\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\usuarios\0077530\Documents\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 E:\usuarios\0077530\Documents\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 E:\usuarios\0077530\Documents\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+DEBUG - 2026-06-12 12:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:49:10 --> CSRF token verified.
+ERROR - 2026-06-12 12:49:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 E:\usuarios\0077530\Documents\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 E:\usuarios\0077530\Documents\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\usuarios\0077530\Documents\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 E:\usuarios\0077530\Documents\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\usuarios\0077530\Documents\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 E:\usuarios\0077530\Documents\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 E:\usuarios\0077530\Documents\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 E:\usuarios\0077530\Documents\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 E:\usuarios\0077530\Documents\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+DEBUG - 2026-06-12 12:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 12:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:55:39 --> CSRF token verified.
+CRITICAL - 2026-06-12 12:55:39 --> ErrorException: Undefined property: App\Controllers\Cliente::$ClienteModel
+[Method: POST, Route: cliente/edit/2]
+in APPPATH\Controllers\Cliente.php on line 66.
+ 1 APPPATH\Controllers\Cliente.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cliente::$ClienteModel', 'E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Controllers\\Cliente.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 13:11:26 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:11:26 --> Error: Call to undefined method App\Services\ClienteService::editCliente()
+[Method: POST, Route: cliente/edit/2]
+in APPPATH\Controllers\Cliente.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 13:12:11 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:12:11 --> ErrorException: Undefined variable $estados
+[Method: POST, Route: cliente/edit/2]
+in APPPATH\Views\clienteEdit.php on line 29.
+ 1 APPPATH\Views\clienteEdit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('ClienteEdit', [], true)
+ 5 APPPATH\Controllers\Cliente.php(73): view('ClienteEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 13:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:14:18 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:14:18 --> ErrorException: Undefined variable $r
+[Method: POST, Route: cliente/edit/2]
+in APPPATH\Views\clienteEdit.php on line 12.
+ 1 APPPATH\Views\clienteEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $r', 'E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('ClienteEdit', [], true)
+ 5 APPPATH\Controllers\Cliente.php(73): view('ClienteEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 13:16:07 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:16:41 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cliente/edit/2]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cliente/edit/2', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 13:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:16:48 --> CSRF token verified.
+DEBUG - 2026-06-12 13:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:19:08 --> CSRF token verified.
+DEBUG - 2026-06-12 13:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:19:16 --> CSRF token verified.
+DEBUG - 2026-06-12 13:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:19:24 --> CSRF token verified.
+DEBUG - 2026-06-12 13:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:20:01 --> CSRF token verified.
+DEBUG - 2026-06-12 13:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 13:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 13:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 13:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 13:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:24:16 --> CSRF token verified.
+INFO - 2026-06-12 13:24:16 --> CSRF token verified.
+DEBUG - 2026-06-12 13:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:24:22 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:27:26 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cliente/edit/6]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cliente/edit/6', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 13:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 13:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:27:32 --> CSRF token verified.
+DEBUG - 2026-06-12 13:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 13:28:07 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:28:07 --> ErrorException: Undefined variable $estados
+[Method: POST, Route: cliente/edit/6]
+in APPPATH\Views\clienteEdit.php on line 18.
+ 1 APPPATH\Views\clienteEdit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('ClienteEdit', [], true)
+ 5 APPPATH\Controllers\Cliente.php(73): view('ClienteEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 13:28:55 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:28:55 --> ErrorException: Undefined variable $estados
+[Method: POST, Route: cliente/edit/6]
+in APPPATH\Views\clienteEdit.php on line 18.
+ 1 APPPATH\Views\clienteEdit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('ClienteEdit', [], true)
+ 5 APPPATH\Controllers\Cliente.php(73): view('ClienteEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 13:31:16 --> CSRF token verified.
+CRITICAL - 2026-06-12 13:31:16 --> ErrorException: Undefined variable $estados
+[Method: POST, Route: cliente/edit/6]
+in APPPATH\Views\clienteEdit.php on line 18.
+ 1 APPPATH\Views\clienteEdit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\usuarios\\0077530\\Documents\\trabalho-II\\app\\Views\\clienteEdit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('ClienteEdit', [], true)
+ 5 APPPATH\Controllers\Cliente.php(73): view('ClienteEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 13:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 13:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

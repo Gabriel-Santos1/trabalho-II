@@ -13,6 +13,20 @@ class ClienteService
         $this->clienteModel = new ClienteModel();
     }
 
+    public function getClienteById($idCliente){
+        try {    
+        $data = $this->clienteModel->find($idCliente);
+        } catch (\Exception $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro ao selecionar os campos: ' . $e->getMessage()
+            ];
+        }
+        return [
+            'status' => 'success',
+            'data'=> $data,
+        ];
+    }
     public function getClientes()
     {
         /*

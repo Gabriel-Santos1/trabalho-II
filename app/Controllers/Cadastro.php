@@ -29,7 +29,7 @@ class Cadastro extends BaseController
             return $r['message'];
         }
         else {
-            return redirect()->back()->with('message', $r['message']);
+            return redirect()->to(base_url('clientesEdit'))->with('message', $r);
         }
         
     }
